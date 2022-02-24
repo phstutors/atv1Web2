@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+
+
+section main{
+    margin-top: 3%;
+}
+section main .btn-success{
+    margin-left: 35%;
+}
+section main .btn-danger{
+    margin-left: 10%;
+}
+
+footer .menu-footer li, a{
+    display: inline-block;
+    margin-left: 25px;    
+    color: black;
+    text-decoration: none;  
+}
+footer{
+    margin-top:45vh;
+
+}footer .menu-footer{
+    margin-left:560px!important;
+    font-family: 'Nanum Gothic Coding', monospace;
+
+}
+footer p{
+    margin-left:730px!important;
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+footer hr{
+    width: 720px;
+    margin-left: 500px;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
