@@ -51,9 +51,9 @@
       <div class="input-group mb-3">
         <span class="input-group-text"><i class="fa-solid fa-barcode"></i></span>
         <span class="input-group-text">Codigo:</span>
-        <input id="valor" type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+        <input id="codigo" type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
       </div>
-      <button type="button" class="btn btn-success">Comprar</button>
+      <button type="button" class="btn btn-success" onclick="comprar()">Comprar</button>
       <button type="button" class="btn btn-danger">Cancelar</button>
     </main>
       </section>
@@ -63,13 +63,26 @@
       <footer>
           <ul class="menu-footer">
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">Produtos</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
             <li><a href="#">Ajuda</a></li>
             <li><a href="#">Redes Sociais</a></li>
           </ul>
           <hr>
           <p><i class="fa-solid fa-copyright"></i>2021 PhsTutors, inc</p>
       </footer>
+    <script>
     
+function comprar(){
+    let produtos =[{nome: "macarrão", codigo: 1234, valor: "R$5"}];
+    const codigo = document.getElementById('codigo').value;
+    const codigoFlot = parseFloat(codigo);
+    if(codigoFlot == 1234){
+        const reprovados = produtos.filter(codigoProduto => codigoProduto.codigo == 1234);
+        const nomeProduto = reprovados.map(nomeProduto => nomeProduto.nome)
+        const valorProduto = reprovados.map(valorProduto => valorProduto.valor);
+        alert(`o valor do produto ${nomeProduto} é: ${valorProduto}`)
+    }
+}
+    </script>
 </body>
 </html>
