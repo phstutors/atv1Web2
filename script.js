@@ -1,1 +1,0 @@
-let produto =[{nome: "macarrão", valor: 1234}];
